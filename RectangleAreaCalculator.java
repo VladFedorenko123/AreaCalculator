@@ -2,8 +2,8 @@ package src.srccode.clculator;
 
 import java.util.Scanner;
 
-public abstract class AbstractRectangleAreaCalculator implements Figure {
-	public void rectangle(Scanner scanner, Figure fig) {
+public abstract class RectangleAreaCalculator implements Figure {
+	public void getAreaRectangle(Scanner scanner, Figure fig) {
 		System.out.println("Please enter the length of the rectangle: ");
 		int length = scanner.nextInt();
 		System.out.println("Please enter the width of the rectangle: ");
