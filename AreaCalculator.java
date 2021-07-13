@@ -8,7 +8,9 @@ public class AreaCalculator {
 		Figure tri = new TriangleAreaCalculator();
 		Figure squ = new SquareAreaCalculator();
 		Figure cir = new CircleAreaCalculator();
-
+		Figure rec = new RectangleAreaCalculator();
+		Figure rightTriangle = new RightTriangleAreaCalculator();
+		
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println(
@@ -18,7 +20,7 @@ public class AreaCalculator {
 			int userInput = scanner.nextInt();
 			switch (userInput) {
 			case 1:
-				squ.getAreaRectangle(scanner, squ);
+				System.out.println(rec.getArea(scanner));
 				break;
 			case 2:
 				System.out.println(squ.getArea(scanner));
@@ -31,7 +33,7 @@ public class AreaCalculator {
 				System.out.println(cir.getArea(scanner));
 				break;
 			case 5:
-				System.out.println(((TriangleAreaCalculator) tri).getAreaRightTriangle(scanner));
+				System.out.println(rightTriangle.getArea(scanner));
 				break;
 			default:
 				System.out.println(

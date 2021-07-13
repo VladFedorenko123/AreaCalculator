@@ -2,7 +2,7 @@ package src.srccode.clculator;
 
 import java.util.Scanner;
 
-public class SquareAreaCalculator extends RectangleAreaCalculator {
+public class SquareAreaCalculator implements Figure {
 
 	@Override
 	public String getArea(Scanner scanner) {
