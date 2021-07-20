@@ -3,11 +3,12 @@ package src.srccode.clculator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class RightTriangleAreaCalculator implements Figure {
+public class RightTriangleAreaCalculator implements Figure, Perimeter {
 	private int firstSide;
 	private int secondSide;
 	private int hypotenuse;
 	private boolean restart = true;
+
 	@Override
 	public double getArea(Scanner scanner) {
 		while (restart) {

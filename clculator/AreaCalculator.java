@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class AreaCalculator {
 	public static void main(String[] args) {
-		Figure tri = new TriangleAreaCalculator();
-		Figure squ = new SquareAreaCalculator();
-		Figure cir = new CircleAreaCalculator();
-		Figure rec = new RectangleAreaCalculator();
-		Figure rightTriangle = new RightTriangleAreaCalculator();
+		TriangleAreaCalculator tri = new TriangleAreaCalculator();
+		SquareAreaCalculator squ = new SquareAreaCalculator();
+		CircleAreaCalculator cir = new CircleAreaCalculator();
+		RectangleAreaCalculator rec = new RectangleAreaCalculator();
+		RightTriangleAreaCalculator rightTriangle = new RightTriangleAreaCalculator();
 
 		Scanner scanner = new Scanner(System.in);
 

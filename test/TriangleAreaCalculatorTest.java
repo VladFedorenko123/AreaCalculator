@@ -17,7 +17,7 @@ class TriangleAreaCalculatorTest {
 	@Test
 	void testGetArea() {
 		when(mock.nextInt()).thenReturn(5);
-		assertEquals(12.5, objectUnderTest.getArea(mock), "The optional failure message is now the last parameter");
+		assertEquals(12.5, objectUnderTest.getArea(mock));
 
 	}
 

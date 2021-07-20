@@ -11,19 +11,19 @@ import org.mockito.Mockito;
 import src.srccode.clculator.RectangleAreaCalculator;
 
 class RectangleAreaCalculatorTest {
-	RectangleAreaCalculator tester = new RectangleAreaCalculator();
+	RectangleAreaCalculator objectUnderTest = new RectangleAreaCalculator();
 	Scanner mock = Mockito.mock(Scanner.class);
 
 	@Test
 	void testGetArea() {
 		when(mock.nextInt()).thenReturn(5);
-		assertEquals(25, tester.getArea(mock));
+		assertEquals(25, objectUnderTest.getArea(mock));
 	}
 
 	@Test
 	void testGetPerimeter() {
 		when(mock.nextInt()).thenReturn(5);
-		assertEquals(20, tester.getPerimeter(mock));
+		assertEquals(20, objectUnderTest.getPerimeter(mock));
 	}
 
 }

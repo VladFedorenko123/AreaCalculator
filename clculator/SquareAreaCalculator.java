@@ -3,7 +3,7 @@ package src.srccode.clculator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class SquareAreaCalculator implements Figure {
+public class SquareAreaCalculator implements Figure, Perimeter {
 	private int lengthOfASide;
 	private boolean restart = true;
 

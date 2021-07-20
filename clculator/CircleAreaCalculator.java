@@ -3,7 +3,7 @@ package src.srccode.clculator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class CircleAreaCalculator implements Figure {
+public class CircleAreaCalculator implements Figure, Perimeter {
 	private int radius;
 	private boolean restart = true;
 

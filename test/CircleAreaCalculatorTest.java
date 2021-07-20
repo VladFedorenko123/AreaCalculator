@@ -11,19 +11,19 @@ import org.mockito.Mockito;
 import src.srccode.clculator.CircleAreaCalculator;
 
 class CircleAreaCalculatorTest {
-	CircleAreaCalculator tester = new CircleAreaCalculator();
+	CircleAreaCalculator objectUnderTest = new CircleAreaCalculator();
 	Scanner mock = Mockito.mock(Scanner.class);
 
 	@Test
 	void testGetArea() {
 		when(mock.nextInt()).thenReturn(5);
-		assertEquals(78.53981633974483, tester.getArea(mock));
+		assertEquals(78.53981633974483, objectUnderTest.getArea(mock));
 	}
 
 	@Test
 	void testGetPerimeter() {
 		when(mock.nextInt()).thenReturn(5);
-		assertEquals(157.07963267948966, tester.getPerimeter(mock));
+		assertEquals(157.07963267948966, objectUnderTest.getPerimeter(mock));
 	}
 
 }

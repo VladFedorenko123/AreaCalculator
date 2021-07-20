@@ -3,7 +3,7 @@ package src.srccode.clculator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class TriangleAreaCalculator implements Figure {
+public class TriangleAreaCalculator implements Figure, Perimeter {
 	private int triangleBase;
 	private int triangleHeight;
 	private int leftSide;
